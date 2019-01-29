@@ -7,7 +7,7 @@ def setcookie():
     response.set_cookie("mynewcookie","selvakumar")
     return response
 
-@app.route('/get')
+@app.route('/getting')
 def getcookie():
     cookiess=request.cookies.get("mynewcookie")
     return "my new cookie is"+cookiess+"is created"
